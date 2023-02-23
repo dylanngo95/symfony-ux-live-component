@@ -1,0 +1,13 @@
+<div {{ attributes }}>
+    <input
+            type="search"
+            data-model="query"
+    >
+
+    <ul>
+        {% for product in this.products %}
+            <li>{{ product.name }}</li>
+            <li>{{ product.price }}</li>
+        {% endfor %}
+    </ul>
+</div>

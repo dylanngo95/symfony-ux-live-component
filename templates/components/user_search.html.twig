@@ -1,0 +1,12 @@
+<div {{ attributes }}>
+    <input
+            type="search"
+            data-model="query"
+    >
+
+    <ul>
+        {% for user in this.users %}
+            <li>{{ user.id }} - {{ user.email }}</li>
+        {% endfor %}
+    </ul>
+</div>
