@@ -17,7 +17,7 @@ class ProductSearchComponent
 
 	public function getProducts(): array
 	{
-		$n = 1000;
+		$n = 5;
 		$products = [];
 		for ($i = 0; $i < $n; $i++) {
 			$products[] = [

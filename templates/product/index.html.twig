@@ -20,7 +20,14 @@
     <div class="example-wrapper">
         <h1>Hello {{ controller_name }}! ✅</h1>
 
-        This friendly message is coming from:
+        <div data-controller="product">
+            We click
+            <span data-product-target="count">0</span>
+            times
+        </div>
+
+        <p>This friendly message is coming from:</p>
+
         {{ component('product_search') }}
         {{ component('alert', { message: 'Hello Twig Components!' }) }}
     </div>
