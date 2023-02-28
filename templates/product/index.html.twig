@@ -20,11 +20,19 @@
     <div class="example-wrapper">
         <h1>Hello {{ controller_name }}! ✅</h1>
 
-        <div data-controller="product">
-            We click
-            <span data-product-target="count">0</span>
-            times
+        <div data-controller="product" class="product-form">
+            <input data-product-target="name" id="name" placeholder="Name">
+            <input data-product-target="price" id="price" placeholder="Price">
+            <input data-product-target="quantity" id="quantity" placeholder="Quantity">
+            <button data-action="product#submit">Create Product</button>
         </div>
+
+        <br/>
+{#        <div data-controller="product">#}
+{#            We click#}
+{#            <span data-product-target="count">0</span>#}
+{#            times#}
+{#        </div>#}
 
         <p>This friendly message is coming from:</p>
 

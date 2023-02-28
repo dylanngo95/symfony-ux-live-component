@@ -2,18 +2,12 @@
 
 namespace App\Components;
 
-use Symfony\UX\LiveComponent\Attribute\AsLiveComponent;
-use Symfony\UX\LiveComponent\DefaultActionTrait;
-use Symfony\UX\LiveComponent\Attribute\LiveProp;
+use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 
-#[AsLiveComponent('product_search')]
+#[AsTwigComponent('product_search')]
 class ProductSearchComponent
 {
-	use DefaultActionTrait;
-
-	#[LiveProp(writable: true)]
 	public string $query = '';
-
 
 	public function getProducts(): array
 	{

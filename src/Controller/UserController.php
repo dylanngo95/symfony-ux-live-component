@@ -41,7 +41,7 @@ class UserController extends AbstractController
 			$userRepository->save($user, true);
 		}
 
-		return $this->render('random_user/index.html.twig', [
+		return $this->render('user/user_random.html.twig', [
 			'controller_name' => 'RandomUserController',
 		]);
 	}
